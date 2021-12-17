@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    function hitungkeliling() {
+        const jari2 = document.getElementById('jari2');
+        const keliling = document.getElementById('keliling');
+        const luas = document.getElementById('luas');
+
+        if (jari2.value == 1){
+            keliling.value = 2 * 3.14 * jari2.value;
+        } else if (jari2.value > 1){
+            keliling.value = 2* 3.14 * jari2.value;
+        } else jari2.value > 1;
+        luas.value = 3.14 * jari2.value * jari2.value;
+    }
+    </script>
+    <h1>Kalkulator Menghitung Keliling dan Luas Lingkaran</h1>
+    <br>
+    <h4 for="jari2">jari-jari</h4>
+    <input id="jari2" type="text">
+    <br>
+    <button onclick="hitungkeliling()">Cetak</button>
+    <br>
+    <h4 for="keliling">Keliling</h4>
+    <input id="keliling" type="text">
+    <br>
+    <h4 for="luas">Luas</h4>
+    <input id="luas" type="text">
+    
+</body>
+</html>

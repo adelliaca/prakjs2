@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Praktikum 1</title>
+</head>
+<body>
+
+    <label for="Dollar">Dollar</label>
+    <input id="Dollar" type="number">
+
+    <button onclick="hitungkursdollar()">Hitung</button>
+    
+    <label for="rupiah">Rupiah</label>
+    <input id="rupiah" type="number">
+
+    <script>
+        function hitungkursdollar(){
+            const Dollar = document.getElementById('Dollar');
+            const Rupiah = document.getElementById('Rupiah')
+
+            rupiah.value = Dollar.value * 14650;
+        }
+    </script>
+</body>
+</html>
